@@ -16,3 +16,4 @@
 node_modules
 design
 /index.html
+package-lock.json
