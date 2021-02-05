@@ -29,6 +29,8 @@ body{
    display: grid;
    grid-template-columns: 1fr;
    margin-top: 3rem;
+   border-radius: 0.5rem;
+   overflow: hidden;
    box-shadow: 0 10px 30px -10px var(--text-color);
 }
 
@@ -87,20 +89,17 @@ body{
    padding-right: 0.8rem;
 }
 
-.prices__button{
+.prices__link{
    display: block;
    background-color: var(--button-text-color);
    color: var(--bg-text-color);
+   text-align: center;
    margin: 1.5rem auto;
    width: 90%;
    padding: 1rem;
-   border: none;
    border-radius: 0.3rem;
    box-shadow: 0 0 10px -7px rgba(0,0,0,1);
-}
-
-.prices__button:focus{
-   outline: none;
+   text-decoration: none;
 }
 
 .about{
@@ -121,6 +120,7 @@ body{
 .footer{
    margin-top: auto;
    padding: 1.5rem;
+   text-align: center;
 }
 
 .footer__profile{
@@ -153,5 +153,10 @@ body{
    .prices{
       padding: 1rem 1.5rem;
    }
+}
 
+@media (min-width: 900px) {
+   .prices__link:hover{
+      text-decoration: underline;
+   }
 }
